@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0011703D1FD18C2C006384CB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0011703C1FD18C2C006384CB /* MapKit.framework */; };
+		0011703F1FD18C88006384CB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0011703E1FD18C88006384CB /* WebViewController.swift */; };
 		0095F2541FD1887800403B88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095F2531FD1887800403B88 /* AppDelegate.swift */; };
 		0095F2561FD1887800403B88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095F2551FD1887800403B88 /* ViewController.swift */; };
 		0095F2591FD1887800403B88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0095F2571FD1887800403B88 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0011703C1FD18C2C006384CB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0011703E1FD18C88006384CB /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		0095F2501FD1887800403B88 /* ofo-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ofo-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0095F2531FD1887800403B88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0095F2551FD1887800403B88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0011703D1FD18C2C006384CB /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0011703B1FD18C2C006384CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0011703C1FD18C2C006384CB /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0095F2471FD1887800403B88 = {
 			isa = PBXGroup;
 			children = (
 				0095F2521FD1887800403B88 /* ofo-Demo */,
 				0095F2511FD1887800403B88 /* Products */,
+				0011703B1FD18C2C006384CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +70,7 @@
 			children = (
 				0095F2531FD1887800403B88 /* AppDelegate.swift */,
 				0095F2551FD1887800403B88 /* ViewController.swift */,
+				0011703E1FD18C88006384CB /* WebViewController.swift */,
 				0095F2571FD1887800403B88 /* Main.storyboard */,
 				0095F25A1FD1887800403B88 /* Assets.xcassets */,
 				0095F25C1FD1887800403B88 /* LaunchScreen.storyboard */,
@@ -97,6 +112,11 @@
 					0095F24F1FD1887800403B88 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -137,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0095F2561FD1887800403B88 /* ViewController.swift in Sources */,
+				0011703F1FD18C88006384CB /* WebViewController.swift in Sources */,
 				0095F2541FD1887800403B88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNABWYP3Z9;
 				INFOPLIST_FILE = "ofo-Demo/Info.plist";
@@ -281,7 +303,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.angelcstt.ofo-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -289,6 +311,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNABWYP3Z9;
 				INFOPLIST_FILE = "ofo-Demo/Info.plist";
@@ -296,7 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.angelcstt.ofo-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
