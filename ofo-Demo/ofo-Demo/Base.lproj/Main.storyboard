@@ -18,10 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Lxd-CF-ZSe">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                            </mapView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gsw-ry-OJm">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gsw-ry-OJm" userLabel="pantView">
                                 <rect key="frame" x="0.0" y="500.5" width="375" height="166.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VhW-5x-0PG">
@@ -33,6 +30,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwI-vw-vkR">
                                                         <rect key="frame" x="42.5" y="0.0" width="40" height="40"/>
                                                         <state key="normal" image="leftBottomImage"/>
+                                                        <connections>
+                                                            <action selector="locationBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cc3-Tj-i5m"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="定位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgu-2R-oqc">
                                                         <rect key="frame" x="51.5" y="48" width="22.5" height="13.5"/>
@@ -79,11 +79,7 @@
                             <constraint firstItem="Gsw-ry-OJm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Asg-FM-fsP"/>
                             <constraint firstItem="Gsw-ry-OJm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="Fts-zQ-Lec"/>
                             <constraint firstItem="Gsw-ry-OJm" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HLE-n9-7GJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lxd-CF-ZSe" secondAttribute="bottom" id="S95-pC-Uai"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lxd-CF-ZSe" secondAttribute="trailing" id="a0C-ba-KQL"/>
-                            <constraint firstItem="Lxd-CF-ZSe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fWb-Ki-u7n"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gsw-ry-OJm" secondAttribute="trailing" id="hV9-y8-Gcp"/>
-                            <constraint firstItem="Lxd-CF-ZSe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="k5J-df-zCo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -95,6 +91,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="pantView" destination="Gsw-ry-OJm" id="2A1-2L-Zdb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

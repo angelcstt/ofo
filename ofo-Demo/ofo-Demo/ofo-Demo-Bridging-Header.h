@@ -3,4 +3,8 @@
 //
 
 #import"SWRevealViewController/SWRevealViewController.h"
-
+#import <MAMapKit/MAMapKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
+#import <AMapNaviKit/AMapNaviKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>

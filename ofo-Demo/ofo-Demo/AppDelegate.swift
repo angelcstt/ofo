@@ -15,7 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        //允许地图数据传输使用https
+        AMapServices.shared().enableHTTPS = true
+        //配置高德key
+        AMapServices.shared().apiKey = "b131105b24ee950483a3ff7600ed3b56"
         return true
     }
 

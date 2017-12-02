@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0011703D1FD18C2C006384CB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0011703C1FD18C2C006384CB /* MapKit.framework */; };
 		0011703F1FD18C88006384CB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0011703E1FD18C88006384CB /* WebViewController.swift */; };
 		0095F2541FD1887800403B88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095F2531FD1887800403B88 /* AppDelegate.swift */; };
 		0095F2561FD1887800403B88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095F2551FD1887800403B88 /* ViewController.swift */; };
@@ -20,7 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0011703C1FD18C2C006384CB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0011703E1FD18C88006384CB /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		0095F2501FD1887800403B88 /* ofo-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ofo-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0095F2531FD1887800403B88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +40,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0011703D1FD18C2C006384CB /* MapKit.framework in Frameworks */,
 				2E1048A70AA268390700E67C /* Pods_ofo_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,7 +50,6 @@
 		0011703B1FD18C2C006384CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0011703C1FD18C2C006384CB /* MapKit.framework */,
 				496E4588D8B979A27E6A8184 /* Pods_ofo_Demo.framework */,
 			);
 			name = Frameworks;
@@ -142,7 +138,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
