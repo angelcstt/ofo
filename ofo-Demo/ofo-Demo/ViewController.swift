@@ -33,6 +33,7 @@ class ViewController: UIViewController, MAMapViewDelegate ,AMapSearchDelegate{
         setNavi()
         initrevealVC()
         view.bringSubview(toFront: pantView)
+       
         
     }
 
@@ -53,6 +54,7 @@ class ViewController: UIViewController, MAMapViewDelegate ,AMapSearchDelegate{
         changeLocationIcon()
         initSearch()
         mapView.update(locationR)
+        
   
     }
     // 设置导航栏
@@ -109,9 +111,9 @@ class ViewController: UIViewController, MAMapViewDelegate ,AMapSearchDelegate{
             return
         }
         //遍历搜到的结果，打印名字
-        for poi in response.pois {
-           print(poi.name)
-        }
+//        for poi in response.pois {
+//         print(poi.name)
+//        }
         
         //转化后的检索得到的pois结果数组
         var annotations: [MAPointAnnotation] = []
@@ -121,20 +123,41 @@ class ViewController: UIViewController, MAMapViewDelegate ,AMapSearchDelegate{
             
             annotation.coordinate = CLLocationCoordinate2D(latitude: (CLLocationDegrees($0.location.latitude)), longitude: CLLocationDegrees($0.location.longitude))
                 //判断是否红包车
-            if $0.distance < 200{
+            if $0.distance < 50{
                 annotation.title = "红包车辆"
                 annotation.subtitle = "骑行十分钟可以领取红包"
             }else{
                 annotation.title = "正常车辆"
-                
+                annotation.subtitle = "看我云长千里走单骑"
                  }
             return annotation
-            
-            
-            
         }
+        
+            mapView.addAnnotations(annotations)
+            mapView.showAnnotations(annotations, animated: true)
     }
-
+    
+    func mapView(_ mapView: MAMapView!, viewFor annotation: MAAnnotation!) -> MAAnnotationView! {
+        //判断是否是用户位置
+        if annotation is MAUserLocation{
+            return nil
+        }
+        let reusid = "myid"
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reusid)as?MAPinAnnotationView
+        if annotationView == nil{
+            annotationView = MAPinAnnotationView(annotation: annotation, reuseIdentifier: reusid)
+            if annotation.title == "正常车辆"{
+                annotationView?.image = #imageLiteral(resourceName: "HomePage_nearbyBike")
+            }else{
+                annotationView?.image = #imageLiteral(resourceName: "HomePage_nearbyBikeRedPacket")
+            }
+        annotationView?.canShowCallout = true
+        annotationView?.animatesDrop = true
+        }
+        
+        return annotationView
+    }
+   
     
 }
 
