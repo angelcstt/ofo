@@ -15,6 +15,7 @@
 		0095F25E1FD1887800403B88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0095F25C1FD1887800403B88 /* LaunchScreen.storyboard */; };
 		0C8C959F1FD22E3E000A2649 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C959E1FD22E3E000A2649 /* MenuController.swift */; };
 		0C8C95A61FD23FD2000A2649 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C95A51FD23FD2000A2649 /* SettingController.swift */; };
+		0C8C95A81FD29F07000A2649 /* xian.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0C8C95A71FD29F07000A2649 /* xian.gpx */; };
 		2E1048A70AA268390700E67C /* Pods_ofo_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496E4588D8B979A27E6A8184 /* Pods_ofo_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		0C8C959E1FD22E3E000A2649 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		0C8C95A01FD235DD000A2649 /* ofo-Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ofo-Demo-Bridging-Header.h"; sourceTree = "<group>"; };
 		0C8C95A51FD23FD2000A2649 /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		0C8C95A71FD29F07000A2649 /* xian.gpx */ = {isa = PBXFileReference; lastKnownFileType = text; path = xian.gpx; sourceTree = "<group>"; };
 		0F94ECCE9B864C0941053912 /* Pods-ofo-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ofo-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ofo-Demo/Pods-ofo-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		496E4588D8B979A27E6A8184 /* Pods_ofo_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ofo_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96FC53123715468A87873429 /* Pods-ofo-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ofo-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ofo-Demo/Pods-ofo-Demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		0095F2471FD1887800403B88 = {
 			isa = PBXGroup;
 			children = (
+				0C8C95A71FD29F07000A2649 /* xian.gpx */,
 				0095F2521FD1887800403B88 /* ofo-Demo */,
 				0095F2511FD1887800403B88 /* Products */,
 				0011703B1FD18C2C006384CB /* Frameworks */,
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0095F25E1FD1887800403B88 /* LaunchScreen.storyboard in Resources */,
+				0C8C95A81FD29F07000A2649 /* xian.gpx in Resources */,
 				0095F25B1FD1887800403B88 /* Assets.xcassets in Resources */,
 				0095F2591FD1887800403B88 /* Main.storyboard in Resources */,
 			);
