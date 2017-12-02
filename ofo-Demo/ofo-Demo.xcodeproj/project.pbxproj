@@ -14,6 +14,9 @@
 		0095F2591FD1887800403B88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0095F2571FD1887800403B88 /* Main.storyboard */; };
 		0095F25B1FD1887800403B88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0095F25A1FD1887800403B88 /* Assets.xcassets */; };
 		0095F25E1FD1887800403B88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0095F25C1FD1887800403B88 /* LaunchScreen.storyboard */; };
+		0C8C959F1FD22E3E000A2649 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C959E1FD22E3E000A2649 /* MenuController.swift */; };
+		0C8C95A61FD23FD2000A2649 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C95A51FD23FD2000A2649 /* SettingController.swift */; };
+		2E1048A70AA268390700E67C /* Pods_ofo_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496E4588D8B979A27E6A8184 /* Pods_ofo_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		0095F25A1FD1887800403B88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0095F25D1FD1887800403B88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0095F25F1FD1887800403B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C8C959E1FD22E3E000A2649 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		0C8C95A01FD235DD000A2649 /* ofo-Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ofo-Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		0C8C95A51FD23FD2000A2649 /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		0F94ECCE9B864C0941053912 /* Pods-ofo-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ofo-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ofo-Demo/Pods-ofo-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		496E4588D8B979A27E6A8184 /* Pods_ofo_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ofo_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96FC53123715468A87873429 /* Pods-ofo-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ofo-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ofo-Demo/Pods-ofo-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +43,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0011703D1FD18C2C006384CB /* MapKit.framework in Frameworks */,
+				2E1048A70AA268390700E67C /* Pods_ofo_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				0011703C1FD18C2C006384CB /* MapKit.framework */,
+				496E4588D8B979A27E6A8184 /* Pods_ofo_Demo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -54,6 +65,7 @@
 				0095F2521FD1887800403B88 /* ofo-Demo */,
 				0095F2511FD1887800403B88 /* Products */,
 				0011703B1FD18C2C006384CB /* Frameworks */,
+				BB61FEDD29B8B6D8DF764A68 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,12 +83,24 @@
 				0095F2531FD1887800403B88 /* AppDelegate.swift */,
 				0095F2551FD1887800403B88 /* ViewController.swift */,
 				0011703E1FD18C88006384CB /* WebViewController.swift */,
+				0C8C959E1FD22E3E000A2649 /* MenuController.swift */,
+				0C8C95A51FD23FD2000A2649 /* SettingController.swift */,
 				0095F2571FD1887800403B88 /* Main.storyboard */,
 				0095F25A1FD1887800403B88 /* Assets.xcassets */,
 				0095F25C1FD1887800403B88 /* LaunchScreen.storyboard */,
 				0095F25F1FD1887800403B88 /* Info.plist */,
+				0C8C95A01FD235DD000A2649 /* ofo-Demo-Bridging-Header.h */,
 			);
 			path = "ofo-Demo";
+			sourceTree = "<group>";
+		};
+		BB61FEDD29B8B6D8DF764A68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96FC53123715468A87873429 /* Pods-ofo-Demo.debug.xcconfig */,
+				0F94ECCE9B864C0941053912 /* Pods-ofo-Demo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0095F2621FD1887800403B88 /* Build configuration list for PBXNativeTarget "ofo-Demo" */;
 			buildPhases = (
+				F0ED6C7B6DA555D26700DC9A /* [CP] Check Pods Manifest.lock */,
 				0095F24C1FD1887800403B88 /* Sources */,
 				0095F24D1FD1887800403B88 /* Frameworks */,
 				0095F24E1FD1887800403B88 /* Resources */,
+				DE97E99AACD60A6A083B5C71 /* [CP] Embed Pods Frameworks */,
+				E982525EDD727E6D7EBB0080 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -111,6 +138,7 @@
 				TargetAttributes = {
 					0095F24F1FD1887800403B88 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -151,11 +179,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DE97E99AACD60A6A083B5C71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ofo-Demo/Pods-ofo-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E982525EDD727E6D7EBB0080 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ofo-Demo/Pods-ofo-Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0ED6C7B6DA555D26700DC9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0095F24C1FD1887800403B88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C8C95A61FD23FD2000A2649 /* SettingController.swift in Sources */,
+				0C8C959F1FD22E3E000A2649 /* MenuController.swift in Sources */,
 				0095F2561FD1887800403B88 /* ViewController.swift in Sources */,
 				0011703F1FD18C88006384CB /* WebViewController.swift in Sources */,
 				0095F2541FD1887800403B88 /* AppDelegate.swift in Sources */,
@@ -293,15 +371,21 @@
 		};
 		0095F2631FD1887800403B88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96FC53123715468A87873429 /* Pods-ofo-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DNABWYP3Z9;
+				DEVELOPMENT_TEAM = 6PAV52RS3R;
 				INFOPLIST_FILE = "ofo-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.angelcstt.ofo-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.study.ofo-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ofo-Demo/ofo-Demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -309,15 +393,20 @@
 		};
 		0095F2641FD1887800403B88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F94ECCE9B864C0941053912 /* Pods-ofo-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DNABWYP3Z9;
+				DEVELOPMENT_TEAM = 6PAV52RS3R;
 				INFOPLIST_FILE = "ofo-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.angelcstt.ofo-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.study.ofo-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ofo-Demo/ofo-Demo-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
